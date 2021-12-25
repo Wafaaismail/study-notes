@@ -1,0 +1,16 @@
+// variable
+$main-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+
+//map
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+body {
+  background: $main-color;
+  color: $text-color;
+  font-weight: map-get($map:$font-weight, $key: bold);
+}
